@@ -1,0 +1,281 @@
+﻿<!doctype html>
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digitální nástroje pro podporu zdraví v esportu</title>
+  <meta name="description" content="Oficiální informační stránka grantového projektu Digitální nástroje pro podporu zdraví v esportu (CZ.01.01.01/01/24_062/0007646)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" th:href="@{/styles.css}" />
+</head>
+<body data-lang="cs">
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">
+      <span class="brand-mark">EH</span>
+      <span class="brand-text">Esport Health AI</span>
+    </a>
+    <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Hlavní navigace">
+      <a href="#projekt">Projekt</a>
+      <a href="#platforma">Platforma</a>
+      <a href="#experimenty">Experimenty</a>
+      <a href="#harmonogram">Harmonogram</a>
+      <a href="#partneri">Partneři</a>
+      <a href="#dopad">Dopad</a>
+    </nav>
+    <div class="lang-picker">
+      <label class="sr-only" for="lang-select">Výběr jazyka</label>
+      <select id="lang-select" class="lang-select" aria-label="Výběr jazyka">
+        <option value="/" th:value="@{/}" selected>Čeština</option>
+        <option value="/en" th:value="@{/en}">English</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="projekt">
+      <p class="eyebrow">Grantový projekt OP TAK</p>
+      <h1>Digitální nástroje pro podporu zdraví v esportu</h1>
+      <p class="lead">Vyvíjíme platformu, která propojí AI, biosenzory a herní data, aby hráčům i trenérům dala měřitelnou oporu pro zdraví, výkon a dlouhodobou udržitelnost.</p>
+      <div class="hero-meta">
+        <p><strong>Registrační číslo:</strong> CZ.01.01.01/01/24_062/0007646</p>
+        <p><strong>Doba realizace:</strong> 1. 7. 2025 - 30. 6. 2027 (24 měsíců)</p>
+      </div>
+      <a class="cta" href="#experimenty">Jak budou probíhat experimenty</a>
+    </section>
+
+    <section class="stats reveal" aria-label="Rychlá fakta">
+      <article class="stat-card">
+        <h2>Finanční rámec</h2>
+        <p><strong>Celkové zdroje:</strong> 29 085 181,20 Kč</p>
+        <p><strong>Způsobilé výdaje:</strong> 28 246 441,20 Kč</p>
+        <p><strong>Spolufinancování:</strong> 2 471 981,76 Kč</p>
+      </article>
+      <article class="stat-card">
+        <h2>Místa realizace</h2>
+        <p>Beroun</p>
+        <p>Kladno</p>
+        <p>Spolupráce napříč akademickou a aplikační sférou.</p>
+      </article>
+      <article class="stat-card">
+        <h2>Hlavní výstup</h2>
+        <p>Modulární platforma <strong>Esport Health AI</strong>:</p>
+        <p>mobil pro hráče, web pro trenéry, telemedicínský modul.</p>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Proč tento projekt</p>
+        <h2>Esport má vrcholové nároky, ale bez vrcholové zdravotní podpory</h2>
+      </div>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Identifikovaný problém</h3>
+          <ul>
+            <li>Rostoucí psychická i fyzická zátěž hráčů bez systematického zdravotního monitoringu.</li>
+            <li>Roztříštěná data (spánek, HRV, herní statistiky) bez jednotné interpretace.</li>
+            <li>Vyšší riziko přetížení, poruch spánku, únavy očí, poklesu výkonu a vyhoření.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Cílová změna</h3>
+          <ul>
+            <li>Zavedení datově řízené péče o hráče i týmy.</li>
+            <li>Predikce rizik a personalizace tréninku v reálném čase.</li>
+            <li>Posun péče o esport na úroveň běžnou ve vrcholovém sportu.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="platforma">
+      <div class="section-head">
+        <p class="eyebrow">Co vyvíjíme</p>
+        <h2>Esport Health AI: od signálu k doporučení</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Sběr dat</h3>
+          <p>EEG, HR/HRV, spánek, eye-tracking, fyzická aktivita, herní telemetry, reakční testy a deníkové záznamy.</p>
+        </article>
+        <article class="feature">
+          <h3>AI analýza</h3>
+          <p>Fúze multimodálních dat, odhad stavu, predikce výkonu, detekce únavy a rizika přetížení.</p>
+        </article>
+        <article class="feature">
+          <h3>Personalizace</h3>
+          <p>Readiness před zápasem, doporučení typu a intenzity tréninku, regenerační protokoly.</p>
+        </article>
+        <article class="feature">
+          <h3>Praktické rozhraní</h3>
+          <p>Mobil pro hráče, webový panel pro trenéry a telemedicínský modul pro odborné konzultace.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experimenty">
+      <div class="section-head">
+        <p class="eyebrow">Experimentální design</p>
+        <h2>Jak budou experimenty probíhat</h2>
+      </div>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Dvoukolový sběr (cílově 500 hráčů)</h3>
+          <p><strong>Kolo 1:</strong> sběr bez zásahu, 1 měsíc na hráče.</p>
+          <p><strong>Kolo 2:</strong> navazující AI intervence a validace doporučení.</p>
+          <p>Pilotní ověření metodiky proběhne v březnu; ostrý sběr dat je plánován od 1. 4.</p>
+        </article>
+        <article class="panel">
+          <h3>Protokol účastníka (30 dní)</h3>
+          <ol>
+            <li><strong>Den 0:</strong> informovaný souhlas, vstupní dotazníky, kalibrace senzorů.</li>
+            <li><strong>Dny 1-30:</strong> běžný trénink/hra se senzory a synchronizací dat.</li>
+            <li><strong>Denní log:</strong> únava, stres, nálada, režimové faktory (spánek, stimulancia, mimořádné události).</li>
+          </ol>
+        </article>
+      </div>
+      <div class="pipeline" aria-label="AI pipeline">
+        <article>
+          <h3>1. Příprava datasetu</h3>
+          <p>Synchronizace modalit, čištění artefaktů, práce s chybějícími daty, feature engineering.</p>
+        </article>
+        <article>
+          <h3>2. Trénink modelů</h3>
+          <p>Baseline modely pro tabulární data, sekvenční modely pro časové řady, multimodální fúze.</p>
+        </article>
+        <article>
+          <h3>3. Predikce a alerty</h3>
+          <p>Stres, únava, readiness, riziko poklesu výkonu a přetížení.</p>
+        </article>
+        <article>
+          <h3>4. Doporučení na míru</h3>
+          <p>Dynamické plánování tréninku, řízené pauzy, spánkový režim, regenerační zásahy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="harmonogram">
+      <div class="section-head">
+        <p class="eyebrow">24 měsíců</p>
+        <h2>Harmonogram projektu</h2>
+      </div>
+      <div class="timeline">
+        <article class="time-item">
+          <p class="time">Etapa I (M1-M6)</p>
+          <h3>Příprava a pilotní vývoj</h3>
+          <p>Rešerše, definice metrik, výběr senzorů, metodika sběru, návrh architektury, pilotní plán.</p>
+        </article>
+        <article class="time-item">
+          <p class="time">Etapa II (M7-M18)</p>
+          <h3>Experimentální vývoj a testování</h3>
+          <p>Vývoj mobilu, webu a backendu, trénink AI modelů, sběr dat v reálných podmínkách, UX iterace.</p>
+        </article>
+        <article class="time-item">
+          <p class="time">Etapa III (M19-M24)</p>
+          <h3>Validace a dokončení</h3>
+          <p>Pilotní provoz s týmy, finální validace efektů, dokumentace, manuály a příprava uvedení na trh.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="partneri">
+      <div class="section-head">
+        <p class="eyebrow">Konsorcium</p>
+        <h2>Partneři a role</h2>
+      </div>
+      <div class="partners">
+        <article>
+          <h3>EuroSynapses s.r.o.</h3>
+          <p>Hlavní řešitel, zdravotní know-how, klinická a aplikační relevance.</p>
+        </article>
+        <article>
+          <h3>PHYSTER TECHNOLOGY, a.s.</h3>
+          <p>Vývoj platformy, integrace systémů, bezpečnost a technická realizace.</p>
+        </article>
+        <article>
+          <h3>Univerzita Karlova - FTVS</h3>
+          <p>Sportovní diagnostika, fyziologie, tréninkové a regenerační protokoly.</p>
+        </article>
+        <article>
+          <h3>ČVUT v Praze - FBMI</h3>
+          <p>Biosignály (EEG/HRV), metodika měření a synchronizace dat.</p>
+        </article>
+        <article>
+          <h3>FT Park z.ú.</h3>
+          <p>Analýza dat, statistika, AI validace a pilotní studie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="dopad">
+      <div class="section-head">
+        <p class="eyebrow">Výsledky</p>
+        <h2>Očekávaný dopad</h2>
+      </div>
+      <div class="grid three">
+        <article class="panel">
+          <h3>Zdraví a výkon</h3>
+          <p>Stabilnější výkon, lepší regenerace, prevence přetížení a vyhoření.</p>
+        </article>
+        <article class="panel">
+          <h3>Praktická použitelnost</h3>
+          <p>Využití pro profesionální týmy, akademie, školy i telemedicínské scénáře.</p>
+        </article>
+        <article class="panel">
+          <h3>Komerční potenciál</h3>
+          <p>Vznik high-tech produktu s mezinárodním potenciálem v oblasti sport-tech a eHealth.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Transparentnost</p>
+        <h2>Často kladené otázky</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Jak je řešena ochrana dat účastníků?</summary>
+          <p>Projekt počítá s anonymizací dat, řízením přístupových práv a souladem s GDPR v celém datovém toku.</p>
+        </details>
+        <details>
+          <summary>Jsou experimenty invazivní?</summary>
+          <p>Ne. Měření je založeno na neinvazivních nositelných senzorech a standardních digitálních protokolech.</p>
+        </details>
+        <details>
+          <summary>Proč je cílový vzorek tak velký?</summary>
+          <p>Větší datový základ zvyšuje robustnost modelů, zlepšuje generalizaci a umožňuje bezpečnější personalizaci doporučení.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section references reveal">
+      <div class="section-head">
+        <p class="eyebrow">Odborné zázemí</p>
+        <h2>Vybrané reference</h2>
+      </div>
+      <ul>
+        <li>Lee et al. (2021): Sleep Characteristics and Mood of Professional Esports Athletes.</li>
+        <li>Moen et al. (2022): Sleep Characteristics in Esport Players and Associations With Game Performance.</li>
+        <li>Sadowska et al. (2023): Physiological Changes during CS:GO Performance.</li>
+        <li>Ketelhut & Nigg (2024): Acute physiological responses during esports play.</li>
+        <li>Jeong et al. (2024): Eye-tracking differences between expert and novice players.</li>
+        <li>Wu et al. (2025): HRV dynamics during competitive esports sessions.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p><strong>Digitální nástroje pro podporu zdraví v esportu</strong> | OP TAK - Aplikace (výzva II.)</p>
+    <p>Informace na této stránce vychází z projektové žádosti a projektové prezentace (verze 2026).</p>
+  </footer>
+
+  <script src="/script.js" th:src="@{/script.js}"></script>
+</body>
+</html>

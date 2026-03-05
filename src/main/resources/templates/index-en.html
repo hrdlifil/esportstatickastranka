@@ -1,0 +1,281 @@
+﻿<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Tools for Health Support in Esports</title>
+  <meta name="description" content="Official information website of the grant project Digital Tools for Health Support in Esports (CZ.01.01.01/01/24_062/0007646)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" th:href="@{/styles.css}" />
+</head>
+<body data-lang="en">
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">
+      <span class="brand-mark">EH</span>
+      <span class="brand-text">Esport Health AI</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#projekt">Project</a>
+      <a href="#platforma">Platform</a>
+      <a href="#experimenty">Experiments</a>
+      <a href="#harmonogram">Timeline</a>
+      <a href="#partneri">Partners</a>
+      <a href="#dopad">Impact</a>
+    </nav>
+    <div class="lang-picker">
+      <label class="sr-only" for="lang-select">Language selection</label>
+      <select id="lang-select" class="lang-select" aria-label="Language selection">
+        <option value="/" th:value="@{/}">Čeština</option>
+        <option value="/en" th:value="@{/en}" selected>English</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="projekt">
+      <p class="eyebrow">OP TAK Grant Project</p>
+      <h1>Digital Tools for Health Support in Esports</h1>
+      <p class="lead">We are developing a platform that combines AI, biosensors, and game data to provide players and coaches with measurable support for health, performance, and long-term sustainability.</p>
+      <div class="hero-meta">
+        <p><strong>Registration ID:</strong> CZ.01.01.01/01/24_062/0007646</p>
+        <p><strong>Project period:</strong> Jul 1, 2025 - Jun 30, 2027 (24 months)</p>
+      </div>
+      <a class="cta" href="#experimenty">How the experiments will work</a>
+    </section>
+
+    <section class="stats reveal" aria-label="Quick facts">
+      <article class="stat-card">
+        <h2>Financial Framework</h2>
+        <p><strong>Total resources:</strong> CZK 29,085,181.20</p>
+        <p><strong>Eligible costs:</strong> CZK 28,246,441.20</p>
+        <p><strong>Co-financing:</strong> CZK 2,471,981.76</p>
+      </article>
+      <article class="stat-card">
+        <h2>Project Locations</h2>
+        <p>Beroun</p>
+        <p>Kladno</p>
+        <p>Collaboration across academia and applied industry.</p>
+      </article>
+      <article class="stat-card">
+        <h2>Main Output</h2>
+        <p>Modular <strong>Esport Health AI</strong> platform:</p>
+        <p>mobile app for players, web dashboard for coaches, telemedicine module.</p>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Why this project</p>
+        <h2>Esports has elite-level demands, but lacks elite-level health support</h2>
+      </div>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Identified Problem</h3>
+          <ul>
+            <li>Growing mental and physical load on players without systematic health monitoring.</li>
+            <li>Fragmented data (sleep, HRV, game metrics) without unified interpretation.</li>
+            <li>Higher risk of overload, sleep issues, eye fatigue, performance drops, and burnout.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Target Change</h3>
+          <ul>
+            <li>Implementation of data-driven care for players and teams.</li>
+            <li>Risk prediction and real-time training personalization.</li>
+            <li>Bringing esports care closer to standards used in traditional elite sport.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="platforma">
+      <div class="section-head">
+        <p class="eyebrow">What we are building</p>
+        <h2>Esport Health AI: from signals to recommendations</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Data Collection</h3>
+          <p>EEG, HR/HRV, sleep, eye-tracking, physical activity, gameplay telemetry, reaction tests, and daily logs.</p>
+        </article>
+        <article class="feature">
+          <h3>AI Analytics</h3>
+          <p>Multimodal data fusion, state estimation, performance forecasting, and fatigue/overload detection.</p>
+        </article>
+        <article class="feature">
+          <h3>Personalization</h3>
+          <p>Match readiness, tailored training intensity/type, and individualized recovery protocols.</p>
+        </article>
+        <article class="feature">
+          <h3>Practical Interface</h3>
+          <p>Mobile app for players, web panel for coaches, and telemedicine support for specialists.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experimenty">
+      <div class="section-head">
+        <p class="eyebrow">Experimental design</p>
+        <h2>How the experiments will be conducted</h2>
+      </div>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Two-round data collection (target: 500 players)</h3>
+          <p><strong>Round 1:</strong> observational data collection, 1 month per player.</p>
+          <p><strong>Round 2:</strong> follow-up AI interventions and recommendation validation.</p>
+          <p>Pilot verification of methodology takes place in March; full data collection starts on April 1.</p>
+        </article>
+        <article class="panel">
+          <h3>Participant Protocol (30 days)</h3>
+          <ol>
+            <li><strong>Day 0:</strong> informed consent, baseline questionnaires, sensor calibration.</li>
+            <li><strong>Days 1-30:</strong> regular training/play with sensors and synchronized data streams.</li>
+            <li><strong>Daily log:</strong> fatigue, stress, mood, and behavioral factors (sleep, stimulants, unusual events).</li>
+          </ol>
+        </article>
+      </div>
+      <div class="pipeline" aria-label="AI pipeline">
+        <article>
+          <h3>1. Dataset preparation</h3>
+          <p>Modality synchronization, artifact cleaning, missing data handling, and feature engineering.</p>
+        </article>
+        <article>
+          <h3>2. Model training</h3>
+          <p>Baseline models for tabular data, sequence models for time series, and multimodal fusion.</p>
+        </article>
+        <article>
+          <h3>3. Prediction and alerts</h3>
+          <p>Stress, fatigue, readiness, and risk of performance decline or overload.</p>
+        </article>
+        <article>
+          <h3>4. Personalized guidance</h3>
+          <p>Dynamic training scheduling, controlled breaks, sleep optimization, and recovery interventions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="harmonogram">
+      <div class="section-head">
+        <p class="eyebrow">24 months</p>
+        <h2>Project timeline</h2>
+      </div>
+      <div class="timeline">
+        <article class="time-item">
+          <p class="time">Phase I (M1-M6)</p>
+          <h3>Preparation and pilot development</h3>
+          <p>Literature review, metric definition, sensor selection, data methodology, architecture design, pilot planning.</p>
+        </article>
+        <article class="time-item">
+          <p class="time">Phase II (M7-M18)</p>
+          <h3>Experimental development and testing</h3>
+          <p>Mobile, web, and backend development; AI training; real-world data collection; UX iterations.</p>
+        </article>
+        <article class="time-item">
+          <p class="time">Phase III (M19-M24)</p>
+          <h3>Validation and completion</h3>
+          <p>Pilot operation with teams, final impact validation, documentation, manuals, and launch preparation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="partneri">
+      <div class="section-head">
+        <p class="eyebrow">Consortium</p>
+        <h2>Partners and roles</h2>
+      </div>
+      <div class="partners">
+        <article>
+          <h3>EuroSynapses s.r.o.</h3>
+          <p>Lead partner, medical know-how, and clinical/application relevance.</p>
+        </article>
+        <article>
+          <h3>PHYSTER TECHNOLOGY, a.s.</h3>
+          <p>Platform development, systems integration, security, and technical implementation.</p>
+        </article>
+        <article>
+          <h3>Charles University - FTVS</h3>
+          <p>Sports diagnostics, physiology, and training/recovery protocols.</p>
+        </article>
+        <article>
+          <h3>CTU in Prague - FBMI</h3>
+          <p>Biosignals (EEG/HRV), measurement methodology, and data synchronization.</p>
+        </article>
+        <article>
+          <h3>FT Park z.ú.</h3>
+          <p>Data analysis, statistics, AI validation, and pilot studies.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="dopad">
+      <div class="section-head">
+        <p class="eyebrow">Outcomes</p>
+        <h2>Expected impact</h2>
+      </div>
+      <div class="grid three">
+        <article class="panel">
+          <h3>Health and performance</h3>
+          <p>More stable performance, better recovery, and prevention of overload and burnout.</p>
+        </article>
+        <article class="panel">
+          <h3>Real-world usability</h3>
+          <p>Use cases for professional teams, academies, schools, and telemedicine scenarios.</p>
+        </article>
+        <article class="panel">
+          <h3>Commercial potential</h3>
+          <p>A high-tech product with international potential in sport-tech and eHealth markets.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Transparency</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How is participant data protection handled?</summary>
+          <p>The project includes data anonymization, access-right management, and GDPR compliance throughout the entire data pipeline.</p>
+        </details>
+        <details>
+          <summary>Are the experiments invasive?</summary>
+          <p>No. Measurements are based on non-invasive wearables and standard digital protocols.</p>
+        </details>
+        <details>
+          <summary>Why is the target sample size so large?</summary>
+          <p>A larger data base improves model robustness, supports better generalization, and enables safer personalization.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section references reveal">
+      <div class="section-head">
+        <p class="eyebrow">Scientific background</p>
+        <h2>Selected references</h2>
+      </div>
+      <ul>
+        <li>Lee et al. (2021): Sleep Characteristics and Mood of Professional Esports Athletes.</li>
+        <li>Moen et al. (2022): Sleep Characteristics in Esport Players and Associations With Game Performance.</li>
+        <li>Sadowska et al. (2023): Physiological Changes during CS:GO Performance.</li>
+        <li>Ketelhut & Nigg (2024): Acute physiological responses during esports play.</li>
+        <li>Jeong et al. (2024): Eye-tracking differences between expert and novice players.</li>
+        <li>Wu et al. (2025): HRV dynamics during competitive esports sessions.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p><strong>Digital Tools for Health Support in Esports</strong> | OP TAK - Applications (Call II)</p>
+    <p>This website is based on the project application and project presentation (2026 version).</p>
+  </footer>
+
+  <script src="/script.js" th:src="@{/script.js}"></script>
+</body>
+</html>
