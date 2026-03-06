@@ -478,6 +478,31 @@ details p {
   font-size: 0.94rem;
 }
 
+.funding-logos {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.funding-logos img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid #d4deee;
+  border-radius: 12px;
+  padding: 0.2rem;
+  box-shadow: 0 8px 18px rgba(17, 36, 58, 0.08);
+}
+
+.funding-logos .logo-eu-strip {
+  width: min(100%, 680px);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(14px);
@@ -569,5 +594,10 @@ details p {
   .hero-meta {
     flex-direction: column;
     gap: 0.4rem;
+  }
+
+  .funding-logos .logo-eu-strip {
+    width: 100%;
+    max-width: 460px;
   }
 }
